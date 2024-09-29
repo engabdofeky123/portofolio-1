@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    z-index: 1;
+    background-color: #fff;
+    text-align: center;
+    height: 90px;
+    overflow: hidden;
+}
+
+nav div {
+    width: 10%;
+    padding-left: 30px;
+}
+nav div img {
+    width: 100%;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 40px;
+    transition: .5s;
+    padding: 10px;
+}
+nav ul li a{
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(32, 32, 129);
+    transition: transform 1s;
+}
+nav ul button a {
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+    
+}
+nav ul button{
+    width: 145px;
+    height: 39px;
+    background-color: blue;
+    margin: 30px;
+}
+nav ul button:hover{
+    opacity: 0.8;
+    font-weight: bolder;
+}
+nav ul li a:hover{
+    color: rgb(107, 107, 250);
+    transform: rotate(360deg);
+}
+
+/* Home section */
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* contact us */
+h2.title {
+    text-align: center;
+    color: #0909f3;
+    text-transform: capitalize;
+    margin-top: 50px ;
+    margin-bottom: 1px;
+}
+.line {
+    display: block;
+    width: 75px;
+    height: 3px;
+    background-color:red ;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.contact form {
+    padding-top: 45px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #0000ffad;
+    padding-bottom: 30px;
+    border-radius: 40px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.contact form label {
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #13de9a;
+}
+.contact form input{
+    width: 200px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.contact form textarea {
+    padding: 10px;
+    width: 200px;
+    height:100px;
+    border-radius: 14px;
+    resize: none;
+    margin-left: 65px;
+}
+.contact form button {
+    margin-top: 30px;
+    width: 120px;
+    height: 30px;
+    background-color: #1919b1;
+    color: white;
+    position: absolute;
+    right: 85px;
+    bottom: 30px;
+}
+/* stories */
+.main-stories, .main-toys{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.main-stories div , .main-toys div {
+    width: 30%;
+    height: 400px;
+    float: left;
+}
+.main-stories div img{
+    width: 100%;
+    height: 100%;
+}
+.main-story2 , .main-toy2 {
+    margin: 0 5%;
+}
+div.story-link , div.toys-link{
+    width: 100%;
+font-size: 15px;
+word-spacing: 3px;
+margin: 30px ;
+height: fit-content;
+text-align: center;
+}
+div.story-link a {
+    font-size: large;
+}
+/* Toys*/
+
+/* The most styles in this section is grouped with the latter section */
+
+.main-toys h3 {
+    color:#0000ffad;
+    text-align: center;
+    border: 2px solid #13de9a;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+.main-toys div {
+    height:200px ;
+}
+/* footer */
+.footer {
+    width: 100%;
+    background-color: #ccc6c6;
+}
+/* =============================================   Log in & Sign up pages   ================================================== */
+
+div.form-sec{
+    width: 80%;
+    height: 80%;
+    margin-top: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+form.login {
+    padding: 50px;
+    text-align: center;
+    background-color: aqua;
+    border: 2px solid blueviolet;
+
+}
+form.login h2 {
+    text-align: center;
+    color: #0909f3;
+}
+form.login input{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    height: 25px;
+}
+form.login button{
+    width: 100px;
+    height: 30px;
+    background-color: #13de9a;
+    margin-left: 470px;
+    margin-top: 30px;
+}
+form.login button a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+}
+form.login button:hover {
+    opacity: 0.8;
+}
+form.login button:hover a{
+    font-weight: bold;
+}
+form.login a {
+    font-weight: bold;
+}
+
+/* =============================================   Stories & Toys pages   ================================================== */
+
+
+.stories-shown {
+    width: 80%;
+    margin: 85px auto 20px auto;
+    overflow: hidden;
+    background-color: #1919b1;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: calc(70% /3 ) calc(70% /3 ) calc(70% /3 );
+    justify-content: center;
+    align-content: center;
+    gap: 30px 30px;
+}
+.stories-shown div img {
+    width: 100%;
+}
+.stories-shown div:hover  {
+    opacity: 0.6;
+}
+/* =============================================   Media Query   ================================================== */
+
+@media (min-width:672px ) {
+    nav ul li {
+        display: inline-block;
+        margin: 0 20px;
+        transition: .5s;
+        padding: 5px;
+    }
+    .contact form button {
+        right: 40px;
+        bottom: 10px;
+    }
+    .main-toy2 {
+        margin: 0 2%;
+    }
+    form.login{
+        position: relative;
+    }
+    form.login button{
+        width: 400px;
+        height: 30px;
+        background-color: #13de9a;
+        margin: 70px auto 0;
+    }
+}
+
+@media (max-width:671px) {
+    nav {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+        position: fixed;
+        z-index: 1;
+        background-color: #ffffff7d;
+        text-align: center;
+        height: 90px;
+        overflow: hidden;
+    }
+    nav ul button{
+        width: 120px;
+        height: 39px;
+        background-color: blue;
+        margin: 30px;
+        position: fixed;
+        top: 3px;
+        z-index: 2;
+        right: -6px;
+    }
+    nav ul li {
+        display: inline-block;
+        margin: 40px 10px 0;
+        transition: .5s;
+        padding: 5px;
+    }
+    form.login button{
+        width: 100px;
+        height: 30px;
+        background-color: #13de9a;
+        margin: 70px auto 0;
+    }
+    .home{
+        width: 100%;
+        height: 300px;
+        background-image: url(../Images/background.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .s-cont h2 {
+        visibility: hidden;
+    }
+}
